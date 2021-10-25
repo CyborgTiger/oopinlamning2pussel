@@ -2,9 +2,8 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 public class BackendGameBoard {
-
+    ArrayList<Piece> pieces = new ArrayList<>();
     public BackendGameBoard() {
-        ArrayList<Piece> pieces = new ArrayList<>();
         for (int i = 0; i < 16; i++) {
             pieces.add(new Piece(i, 0));
         }
