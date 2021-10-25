@@ -15,6 +15,10 @@ public class BackendGameBoard {
     }
 
     public void MovePiece(int positionFrom, int positionTo){
-
+        for (Piece piece : pieces) {
+            if (piece.getPosition() == positionFrom) {
+                piece.setPosition(positionTo);
+            }
+        }
     }
 }
