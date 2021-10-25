@@ -1,5 +1,5 @@
 public class Piece {
-    private int value;
+    private final int value;
     private int position;
 
     public Piece(int value, int position){
@@ -11,15 +11,25 @@ public class Piece {
         return value;
     }
 
-    public void setValue(int value) {
-        this.value = value;
-    }
-
     public int getPosition() {
         return position;
     }
 
     public void setPosition(int position) {
         this.position = position;
+    }
+
+    public int changePosition(int positionGoing){
+        int positionComing = this.position;
+        this.position = positionGoing;
+        return positionComing;
+    }
+
+    @Override
+    public String toString() {
+        return "Piece{" +
+                "value=" + value +
+                ", position=" + position +
+                '}';
     }
 }
