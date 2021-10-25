@@ -1,5 +1,5 @@
 public class Piece {
-    private int value;
+    private final int value;
     private int position;
 
     public Piece(int value, int position){
@@ -9,10 +9,6 @@ public class Piece {
 
     public int getValue() {
         return value;
-    }
-
-    public void setValue(int value) {
-        this.value = value;
     }
 
     public int getPosition() {
